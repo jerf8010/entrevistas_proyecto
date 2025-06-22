@@ -1,6 +1,5 @@
-FROM python:3.9.23
+FROM python:3.9-slim
 
-# Instala dependencias necesarias del sistema
 RUN apt-get update && apt-get install -y \
     build-essential \
     pkg-config \
@@ -16,4 +15,6 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["streamlit", "run", "app.py"]
+EXPOSE 10000
+
+CMD ["streamlit", "run", "app.py", "--server.port=10000", "--server.address=0.0.0.0"]
