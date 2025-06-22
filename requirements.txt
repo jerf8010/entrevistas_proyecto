@@ -48,7 +48,7 @@ fuzzywuzzy>=0.18.0
 python-levenshtein>=0.21.1
 
 # ===== UTILIDADES DE SISTEMA =====
-os-sys
+#os-sys
 
 # ===== UTILIDADES GENERALES =====
 requests>=2.31.0
@@ -108,3 +108,5 @@ wheel>=0.40.0
 # ===== DEPENDENCIAS DE DESARROLLO =====
 setuptools>=68.0.0
 pip>=23.0.0
+
+tf-keras
