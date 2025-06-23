@@ -122,6 +122,8 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.venv39
+venv39/
 env/
 venv/
 venv-tf/

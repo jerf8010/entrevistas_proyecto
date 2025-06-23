@@ -111,13 +111,4 @@ pip>=23.0.0
 
 tf-keras
 streamlit-webrtc
-nltk==3.8.1
-pyresparser
-pydub
-pdfplumber
-
-
-
-# Modelos de spaCy necesarios (instalar manualmente)
-# python -m spacy download es_core_news_md
-# python -m spacy download en_core_web_sm
+tensorflow

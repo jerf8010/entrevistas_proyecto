@@ -15,6 +15,11 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
+RUN python -m nltk.downloader stopwords
+
+RUN python -m spacy download es_core_news_md
+RUN python -m spacy download en_core_web_sm
+
 EXPOSE 10000
 
 CMD ["streamlit", "run", "app.py", "--server.port=10000", "--server.address=0.0.0.0"]
